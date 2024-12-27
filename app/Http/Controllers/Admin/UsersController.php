@@ -57,7 +57,7 @@ class UsersController extends Controller
             [
                 'name' => 'required',
                 'email' => 'required|string|max:255|email|unique:users',
-                'mobile' => 'required|unique:users',
+                'mobile' => 'required',
                 'city' => 'required',
                 'images' => 'required|array',
                 'images.*' => 'image|mimes:jpg,jpeg,png',
