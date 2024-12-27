@@ -9,11 +9,15 @@
     {!! $errors->first('email', '<p class="help-block">:message</p>') !!}
 </div>
 
-<div class="form-group{{ $errors->has('mobile') ? ' has-error' : ''}}">
+<!-- <div class="form-group{{ $errors->has('mobile') ? ' has-error' : ''}}">
     {!! Form::label('mobile', 'Mobile: ', ['class' => 'control-label']) !!}
     {!! Form::text('mobile', null, ['class' => 'form-control','maxlength' => 10,'required' => 'required']) !!}
     {!! $errors->first('mobile', '<p class="help-block">:message</p>') !!}
-</div>
+</div> -->
+<!-- mobile number validation -->
+{!! Form::text('mobile', null, ['class' => 'form-control', 'maxlength' => 10, 'required' => 'required']) !!}
+
+
 <div class="form-group{{ $errors->has('city') ? ' has-error' : ''}}">
     {!! Form::label('city', 'City: ', ['class' => 'control-label']) !!}
     {!! Form::select('city', $citys, isset($user->city) ? $user->city : '', ['class' => 'form-control']) !!}
