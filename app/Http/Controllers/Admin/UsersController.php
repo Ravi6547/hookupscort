@@ -152,7 +152,7 @@ class UsersController extends Controller
                 'name' => 'required',
                 'email' => 'required|string|max:255|email|unique:users,email,' . $id,
                 'city' => 'required',
-                'mobile' => 'required' . $id,
+                'mobile' => 'required',
                 'images.*' => 'image|mimes:jpg,jpeg,png',
             ],[
                 // Custom error messages for validation
