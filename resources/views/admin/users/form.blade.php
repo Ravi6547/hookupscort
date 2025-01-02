@@ -16,7 +16,7 @@
     {!! $errors->first('mobile', '<p class="help-block">:message</p>') !!}
 </div> -->
 
-{{-- <div class="form-group{{ $errors->has('mobile') ? ' has-error' : ''}}">
+ <div class="form-group{{ $errors->has('mobile') ? ' has-error' : ''}}">
     {!! Form::label('mobile', 'Mobile: ', ['class' => 'control-label']) !!}
     
     <!-- Country code dropdown -->
@@ -35,7 +35,7 @@
     </div>
 
     {!! $errors->first('mobile', '<p class="help-block">:message</p>') !!}
-</div> --}}
+</div> 
 
 <div class="form-group{{ $errors->has('city') ? ' has-error' : ''}}">
     {!! Form::label('city', 'City: ', ['class' => 'control-label']) !!}
