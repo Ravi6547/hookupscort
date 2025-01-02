@@ -10,11 +10,32 @@
 </div>
 
 
-<div class="form-group{{ $errors->has('mobile') ? ' has-error' : ''}}">
+<!-- <div class="form-group{{ $errors->has('mobile') ? ' has-error' : ''}}">
     {!! Form::label('mobile', 'Mobile: ', ['class' => 'control-label']) !!}
     {!! Form::text('mobile', null, ['class' => 'form-control','maxlength' => 10,'required' => 'required']) !!}
     {!! $errors->first('mobile', '<p class="help-block">:message</p>') !!}
-</div>
+</div> -->
+
+{{-- <div class="form-group{{ $errors->has('mobile') ? ' has-error' : ''}}">
+    {!! Form::label('mobile', 'Mobile: ', ['class' => 'control-label']) !!}
+    
+    <!-- Country code dropdown -->
+    <div class="input-group">
+        <span class="input-group-addon">
+            <select name="country_code" class="form-control" required>
+                <option value="+1">+1 (USA)</option>
+                <option value="+91">+91 (India)</option>
+                <option value="+44">+44 (UK)</option>
+                <!-- Add more country codes as needed -->
+            </select>
+        </span>
+        
+        <!-- Mobile number input -->
+        {!! Form::text('mobile', null, ['class' => 'form-control', 'maxlength' => 10, 'required' => 'required']) !!}
+    </div>
+
+    {!! $errors->first('mobile', '<p class="help-block">:message</p>') !!}
+</div> --}}
 
 <div class="form-group{{ $errors->has('city') ? ' has-error' : ''}}">
     {!! Form::label('city', 'City: ', ['class' => 'control-label']) !!}
